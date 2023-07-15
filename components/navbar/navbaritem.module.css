@@ -1,7 +1,3 @@
-.navbarItem {
-    color: whitesmoke;
-}
-
 .navbarItem:hover {
     border-bottom: 5px solid red;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);

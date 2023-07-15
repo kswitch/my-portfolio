@@ -1,13 +1,15 @@
 .hamburger {
     display: none;
     padding: 1rem 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
 }
 
 .bar {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px auto;
+    margin: 5px 0 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: whitesmoke;
@@ -15,7 +17,9 @@
 
 @media (max-width: 399px) {
     .hamburger {
+        position: fixed;
+        right: 0;
+        top: 0;
         display: block;
-        float: right;
     }
 }

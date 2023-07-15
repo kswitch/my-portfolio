@@ -1,6 +1,4 @@
-// import { useEffect, useState } from 'react'
 import styles from './hamburger.module.css'
-
 interface HamburgerProps {
     menuState: boolean,
     openOrCloseMenu: Function

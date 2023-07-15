@@ -1,0 +1,23 @@
+.hero {
+    padding: 0.6rem 2rem;
+    background-color: red;
+    border-radius: 0.3125rem;
+    width: fit-content;
+    align-self: center;
+}
+@media (min-width: 400px) {
+    .hero {
+        align-self: flex-start;
+    }
+}
+@media (min-width: 600px) {
+    .default {
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 900px) {
+    .default {
+        font-size: 80%;
+    }
+}
