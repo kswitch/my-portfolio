@@ -18,4 +18,7 @@
     max-width: 7rem;
 }
 .worksList {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
 }

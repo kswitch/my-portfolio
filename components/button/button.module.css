@@ -5,13 +5,21 @@
     width: fit-content;
     align-self: center;
 }
+
 .workLink {
     padding: 0.6rem 2rem;
     border-bottom: 1px solid red;
 }
+
 .workLink:hover, .workLink:focus {
     background-color: red;
     transition: all 0.35s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+@media (max-width: 399px) {
+    .workLink {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 400px) {

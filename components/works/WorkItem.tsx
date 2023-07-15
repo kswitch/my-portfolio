@@ -11,21 +11,29 @@ interface WorkItemProps {
     excerpt: string,
     languages: string[],
     weblink: string,
-    githubLink: string
+    githubLink: string,
+    priority?: boolean | undefined
 }
 
 export default function WorkItem(props: WorkItemProps): JSX.Element {
-    const {title, excerpt, languages, weblink, githubLink, imgSrc, imgAlt} = props
+    const {title, excerpt, languages, weblink, githubLink, imgSrc, imgAlt, priority} = props
     return (
         <div className={styles.container}>
             <div className={styles.workImage}>
-                <Image src={imgSrc} alt={imgAlt} fill={true} className={styles.workImage}/>
+                <Image 
+                    src={imgSrc} 
+                    alt={imgAlt} 
+                    fill={true} 
+                    className={styles.workImage}
+                    sizes="(max-width: 800px) 36rem, (min-width: 801px) 36rem"
+                    priority={priority}
+                />
             </div>
             <div className={styles.workDetails}>
                 <h2>{title}</h2>
                 <p>{excerpt}</p>
                 <ul>
-                    {languages.map(language => (<li key={language} className={styles.language}>&#9679; {language}</li>))}
+                    {languages.map(language => (<li key={language} className={styles.language}>&#9679; &nbsp;{language}</li>))}
                 </ul>
                 <div className={styles.workItemLinks}>
                     <Button

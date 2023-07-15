@@ -1,11 +1,11 @@
 .container {
     display: grid;
     gap: 1.2rem;
-    max-width: 1290px;
+    max-width: 1250px;
 }
 
 .workImage {
-    display: block;
+    display: flex;
     position: relative;
     height: 50vw;
 }
@@ -16,27 +16,49 @@
     flex-direction: column;
     gap: 1rem;
 }
+.workDetails p, .workDetails ul {
+    font-size: 1.2rem;
+}
 .language {
     list-style-type: none;
     padding-left: 1rem;
 }
 
 .githubLink {
-
+    width: 2.5rem;
+    align-self: center;
 }
+
+.githubLink:hover {
+    transform: scale(1.5);
+    transition: all 0.35s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
 .workItemLinks {
     display: flex;
+    padding: 1rem 0;
     flex-direction: row;
+    max-height: min-content;
+    gap: 1.5rem;
+    align-items: center;
 }
-@media (min-width: 900px) {
+
+@media (max-width: 800px) {
+    .workImage {
+        max-height: 25rem;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media (min-width: 801px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+        gap: 2rem;
     }
     .workImage {
         max-width: 36rem;
         max-height: 20rem;
-        object-fit: contain;
+        /* object-fit: contain; */
     }
     .workImage, .workDetails {
         align-self: center;
