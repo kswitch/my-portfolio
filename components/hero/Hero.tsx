@@ -10,7 +10,7 @@ export default function Hero(): JSX.Element {
                 <Button 
                     value="Get in Touch"
                     style="hero"
-                    link="contact"
+                    link="/#contact"
                 />
             </div>
         </div>

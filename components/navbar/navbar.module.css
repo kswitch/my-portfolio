@@ -5,6 +5,7 @@
     width: 100vw;
     font-size: 5vw;
     background-color: rgba(0, 0, 0, 0.774);
+    z-index: 1;
 }
 
 @media (max-width: 399px) {
