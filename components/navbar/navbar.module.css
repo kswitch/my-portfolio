@@ -4,6 +4,7 @@
     position: fixed;
     width: 100vw;
     font-size: 5vw;
+    background-color: rgba(0, 0, 0, 0.774);
 }
 
 @media (max-width: 399px) {
@@ -22,7 +23,7 @@
         gap: 1.5rem;
         font-size: 125%;
         padding-right: 2rem;
-        background-color: rgba(0, 0, 0, 0.954);
+        background-color: rgba(0, 0, 0, 0.774);
     }
 }
 
