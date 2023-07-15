@@ -1,11 +1,22 @@
+// import { useEffect, useState } from 'react'
 import styles from './hamburger.module.css'
 
-export default function Hamburger():JSX.Element {
+interface HamburgerProps {
+    menuState: boolean,
+    openOrCloseMenu: Function
+}
+
+export default function Hamburger({menuState, openOrCloseMenu}: HamburgerProps):JSX.Element {
+    
+    function openCloseMenu(): void {
+        openOrCloseMenu()
+    }
+
     return (
-        <div className={styles.hamburger}>
-            <span className={styles.bar}></span>
-            <span className={styles.bar}></span>
-            <span className={styles.bar}></span>
+        <div className={`${styles.hamburger} ${menuState ? 'open' : ''}`} onClick={openCloseMenu}>
+            <span className={`${styles.bar} bar`}></span>
+            <span className={`${styles.bar} bar`}></span>
+            <span className={`${styles.bar} bar`}></span>
         </div>
     )
 }

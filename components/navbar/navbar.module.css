@@ -1,5 +1,4 @@
 .navbar {
-    display: flex;
     padding: 1rem 1rem;
     justify-content: space-around;
     position: fixed;
@@ -10,22 +9,32 @@
 @media (max-width: 399px) {
     .navbar {
         display: none;
-        flex-direction: column;
+        max-width: 80vw;
+        border-radius: 0 0.3125rem 0.3125rem 0;
     }
 }
 
+
 @media (min-width: 400px) {
     .navbar {
+        display: flex;
         justify-content: flex-end;
         gap: 1.5rem;
         font-size: 125%;
         padding-right: 2rem;
     }
 }
+
+@media (min-width: 600px) {
+    .navbar {
+        font-size: 145%;
+    }
+}
+
 @media (min-width: 900px) {
     .navbar {
         gap: 2rem;
         padding-right: 3.5rem;
-        font-size: 170%;
+        font-size: 160%;
     }
 }
