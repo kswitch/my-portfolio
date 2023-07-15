@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    padding: 1rem 1rem;
+    justify-content: space-around;
+    position: fixed;
+    width: 100vw;
+    font-size: 5vw;
+    background-color: rgba(58, 156, 156, 0.501);
+}
+@media (min-width: 400px) {
+    .navbar {
+        justify-content: flex-end;
+        gap: 1.5rem;
+        font-size: 125%;
+        padding-right: 2rem;
+    }
+}
+@media (min-width: 900px) {
+    .navbar {
+        gap: 2rem;
+        padding-right: 3.5rem;
+        font-size: 170%;
+    }
+}

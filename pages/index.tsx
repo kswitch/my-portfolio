@@ -15,7 +15,6 @@ export default function Home() {
         {/* <link></link> Remeber to put a fav icon here*/}
       </Head>
       <main>
-
       </main>
     </>
   )
