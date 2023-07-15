@@ -5,8 +5,15 @@
     position: fixed;
     width: 100vw;
     font-size: 5vw;
-    background-color: rgba(58, 156, 156, 0.501);
 }
+
+@media (max-width: 399px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+}
+
 @media (min-width: 400px) {
     .navbar {
         justify-content: flex-end;

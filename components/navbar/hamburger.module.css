@@ -1,0 +1,21 @@
+.hamburger {
+    display: none;
+    padding: 1rem 1rem;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+
+@media (max-width: 399px) {
+    .hamburger {
+        display: block;
+        float: right;
+    }
+}
