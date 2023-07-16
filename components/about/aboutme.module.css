@@ -3,7 +3,6 @@
     padding-top: 4rem;
     background-color: black;
     border-top: 1px solid rgba(255, 255, 255, 0.356);
-    
 }
 
 .image {
@@ -25,16 +24,20 @@
     .image {
         max-width: 36rem;
         max-height: 20rem;
+        order: 2;
     }
     .details {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         align-items: center;
+        padding-left: 3rem;
     }
     .description {
         font-size: 130%;
+        order: 1;
     }
 }
+
 @media (min-width: 850px) {
     .description {
         font-size: 140%;

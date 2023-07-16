@@ -2,7 +2,7 @@ import Button from '../button/Button'
 import styles from './workitem.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import GitHubIcon from '../GitHubIcon'
+import GitHubIcon from '../icons/GitHubIcon'
 
 interface WorkItemProps {
     imgSrc: string,

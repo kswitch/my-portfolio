@@ -1,0 +1,28 @@
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    bottom: 0;
+    left: 50;
+    right: 50;
+    border-radius: 0.3125rem;
+}
+.pending {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 2px white;
+}
+.error {
+    background-color: red;
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px 5px red;
+
+}
+.success {
+    background-color: green;
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px 5px green;
+}

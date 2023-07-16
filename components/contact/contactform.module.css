@@ -1,0 +1,52 @@
+
+.container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+}
+
+.contactBtn {
+    color: whitesmoke;
+    background-color: red;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.contactBtn:hover {
+    background-color: black;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.formInputs {
+    max-width: 700px;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px,280px));
+}
+.inputField {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+.textArea {
+    font-family: 'Jost';
+    min-height: 3.125rem;
+    min-width: 11rem;
+    max-width: 575px;
+    max-height: 350px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
