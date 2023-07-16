@@ -1,8 +1,16 @@
 .container {
-    font-size: 120%;
+    font-size: 90%;
 }
 @media (min-width: 761px) {
     .container {
         padding-left: 3rem;
+    }
+}@media (min-width: 801px) {
+    .container {
+        font-size: 130%;
+    }
+}@media (min-width: 850px) {
+    .container {
+        font-size: 140%;
     }
 }
