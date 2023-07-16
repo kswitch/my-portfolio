@@ -1,0 +1,42 @@
+.container {
+    padding: 4rem 2rem;
+    padding-top: 4rem;
+    background-color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.356);
+    
+}
+
+.image {
+    position: relative;
+    height: 50vw;
+}
+
+.details {
+    display: grid;
+    max-width: 1250px;
+}
+
+.description {
+    padding-top: 2rem;
+    font-size: 3vw;
+}
+
+@media (min-width: 801px) {
+    .image {
+        max-width: 36rem;
+        max-height: 20rem;
+    }
+    .details {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+    .description {
+        font-size: 130%;
+    }
+}
+@media (min-width: 850px) {
+    .description {
+        font-size: 140%;
+    }
+}

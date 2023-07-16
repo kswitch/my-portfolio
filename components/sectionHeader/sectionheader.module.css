@@ -1,0 +1,12 @@
+.title {
+    display: inline-block;
+    font-size: 2.2rem;
+}
+
+.border {
+    display: block;
+    border: 2px solid red;
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    max-width: 7rem;
+}

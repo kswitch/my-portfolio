@@ -1,3 +1,5 @@
+import AboutMe from '@/components/about/AboutMe'
+import ContactMe from '@/components/contact/Contact'
 import Hero from '@/components/hero/Hero'
 import MyWorks from '@/components/works/MyWorks'
 import Head from 'next/head'
@@ -14,6 +16,8 @@ export default function Home() {
       <main>
         <Hero />
         <MyWorks />
+        <AboutMe />
+        <ContactMe />
       </main>
     </>
 }
