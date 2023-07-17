@@ -4,7 +4,7 @@ interface MessageBodyProp {
     message: string,
 }
 
-export default async function fetchRequest(messageBody: MessageBodyProp, url:string, method?:string) {
+export default async function fetchRequest(messageBody:MessageBodyProp, url:string, method?:string) {
     if (method === 'POST') {
         const response = await fetch(url, {
             method : method,

@@ -18,6 +18,16 @@ export default function MyWorks (): JSX.Element {
                     priority= {true}
                 />
                 <WorkItem 
+                    imgSrc= "/images/portfolio-webpage.png"
+                    imgAlt= "Portfolio Image"
+                    title= "My Portfolio"
+                    excerpt= "A Portfolio built using Next.JS and TypeScript"
+                    languages={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Next.JS']}
+                    weblink="https://kswitch.netlify.app"
+                    githubLink="https://github.com/kswitch/my-portfolio"
+                    priority= {true}
+                />
+                <WorkItem 
                     imgSrc= "/images/weather-forecast.png"
                     imgAlt= "Weather Forecast Image"
                     title= "Weather Forecast Website"
@@ -34,17 +44,6 @@ export default function MyWorks (): JSX.Element {
                     languages={['HTML', 'CSS', 'JavaScript', 'React.JS']}
                     weblink="https://kswitch-speed-typing-game.netlify.app"
                     githubLink="https://github.com/kswitch/speed-typing-game"
-                />
-
-                <WorkItem 
-                    imgSrc= "/images/portfolio-webpage.png"
-                    imgAlt= "Portfolio Image"
-                    title= "My Portfolio"
-                    excerpt= "A Portfolio built using Next.JS and TypeScript"
-                    languages={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Next.JS']}
-                    weblink="https://kswitch.netlify.app"
-                    githubLink="https://github.com/kswitch/my-portfolio"
-                    priority= {true}
                 />
             </div>
         </div>

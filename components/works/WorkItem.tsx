@@ -15,8 +15,16 @@ interface WorkItemProps {
     priority?: boolean | undefined
 }
 
-export default function WorkItem(props: WorkItemProps): JSX.Element {
-    const {title, excerpt, languages, weblink, githubLink, imgSrc, imgAlt, priority} = props
+export default function WorkItem({
+    title, 
+    excerpt, 
+    languages, 
+    weblink, 
+    githubLink, 
+    imgSrc, 
+    imgAlt, 
+    priority
+}: WorkItemProps): JSX.Element {
     return (
         <div className={styles.container}>
             <div className={styles.workImage}>

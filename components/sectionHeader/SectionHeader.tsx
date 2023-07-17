@@ -1,16 +1,10 @@
 import styles from './sectionheader.module.css'
 
-interface SectionHeaderProps {
-    value: string
-}
-
-export default function SectionHeader (props: SectionHeaderProps): JSX.Element {
-    const {value} = props
-    
+export default function SectionHeader ({value}: {value:string}): JSX.Element {    
     return (
         <>
             <h2 className={styles.title}>{value}</h2>
-            <span className={styles.border}></span>
+            <span className={styles.bottomBorder}></span>
         </>
     )
 }

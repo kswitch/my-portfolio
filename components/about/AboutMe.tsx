@@ -12,7 +12,13 @@ export default function AboutMe(): JSX.Element {
                     {/* Replace the image above. It is currently a placeholder image */}
                 </div>
                 <div className={styles.description}>
-                    I&apos;m a Frontend developer based out of Lagos, Nigeria. I love building apps that solve real-world problems, and that are delightful to use. My specialities include HTML, CSS, JavaScript, React, TypeScript and Next JS. <br/> <br/> My background is in Engineering, and I have a bachelors degree in Gas Engineering from University of Port Harcourt, Rivers State, Nigeria.
+                    I&apos;m a Frontend developer based out of Lagos, Nigeria. 
+                    I love building apps that solve real-world problems, and that are delightful to use. 
+                    My specialities include HTML, CSS, JavaScript, React, TypeScript and Next JS. 
+                    <br/> <br/> 
+                    My background is in Engineering, 
+                    and I have a bachelors degree in Gas Engineering from University of Port Harcourt, 
+                    Rivers State, Nigeria.
                 </div>
             </div>
         </div>

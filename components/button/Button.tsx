@@ -8,8 +8,7 @@ interface ButtonProps {
     target?: string
 }
 
-export default function Button(props: ButtonProps): JSX.Element {
-    const {value, style, link, target} = props
+export default function Button({value, style, link, target}: ButtonProps): JSX.Element {
     return (
         <div className={`${styles.default} ${styles[style]}`}>
             <Link href={`${link}`} target={target}>

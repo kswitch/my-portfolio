@@ -1,6 +1,5 @@
 
 .container {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +28,7 @@
 }
 
 .formInputs {
-    max-width: 700px;
+    max-width: 43.75rem;
     display: grid;
     justify-content: center;
     gap: 1rem;
@@ -45,8 +44,8 @@
     font-family: 'Jost';
     min-height: 3.125rem;
     min-width: 11rem;
-    max-width: 575px;
-    max-height: 350px;
+    max-width: 35.9375rem;
+    max-height: 15.625rem;
 }
 .input {
     display: flex;

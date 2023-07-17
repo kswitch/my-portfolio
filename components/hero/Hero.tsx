@@ -1,12 +1,17 @@
 import styles from './hero.module.css'
 import Button from '../button/Button'
 
-export default function Hero(): JSX.Element {
+interface HeroProps {
+    name: string
+    excerpt: string
+}
+
+export default function Hero({name, excerpt}: HeroProps): JSX.Element {
     return (
         <div className={styles.hero} id='home'>
             <div className={styles.heroContent}>
-                <h2>Kingsley Osuagwu-Chidiadi</h2>
-                <h5>A Frontend Developer based in Lagos, Nigeria</h5>
+                <h2>{name}</h2>
+                <h5>{excerpt}</h5>
                 <Button 
                     value="Get in Touch"
                     style="hero"
