@@ -11,12 +11,14 @@ export default function ContactForm(): JSX.Element {
     const [messageSentState, setMessageSentState] = useState<string>('')
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setSendingState(null)
-            setMessageSentState('')
-        }, 4000)
+        if (sendingState == 'success' || sendingState == 'error') {
+            const timer = setTimeout(() => {
+                setSendingState(null)
+                setMessageSentState('')
+            }, 2500)
 
-        return () => clearTimeout(timer)
+            return () => clearTimeout(timer)
+        }
     },[sendingState])
 
     async function handleSubmit (e: FormEvent<HTMLFormElement>) {
@@ -29,7 +31,7 @@ export default function ContactForm(): JSX.Element {
         }
 
         setSendingState('pending')
-        setMessageSentState('Sending Message');
+        setMessageSentState('Sending Message...');
 
         try {
             const data = await fetchRequest(messageBody, '/api/contact', 'POST')
