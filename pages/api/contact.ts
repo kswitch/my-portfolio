@@ -60,9 +60,9 @@ export default async function Contact(req: NextApiRequest,res: NextApiResponse<D
         console.log(error)
       }
     } 
-    catch (error: any) {
+    catch (error) {
       res.status(502).json({ message: "Message Not Sent. Please Contact Site Administrator"})
       console.log(error)
     }
-  } 
+  }
 }
