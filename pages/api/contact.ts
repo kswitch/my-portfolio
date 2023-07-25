@@ -64,5 +64,5 @@ export default async function Contact(req: NextApiRequest,res: NextApiResponse<D
       res.status(502).json({ message: error})
       console.log(error)
     }
-  }
+  } 
 }
