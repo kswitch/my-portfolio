@@ -34,7 +34,7 @@ export default function ContactForm(): JSX.Element {
         setMessageSentState('Sending Message...');
 
         try {
-            const data = await fetchRequest(messageBody, '/api/contact', 'POST')
+            const data = await fetchRequest('/api/contact', 'POST', messageBody)
             setSendingState('success')
             setName('')
             setEmail('')
