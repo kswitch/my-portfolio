@@ -66,7 +66,7 @@ export default function ContactForm(): JSX.Element {
                     <div className={styles.input}>
                         <label htmlFor='email'>Email: </label>
                         <input 
-                            type='text' 
+                            type='email' 
                             id='email' 
                             className={styles.inputField}
                             placeholder='Email Address' 
