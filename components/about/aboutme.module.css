@@ -5,13 +5,18 @@
     border-top: 1px solid rgba(255, 255, 255, 0.356);
 }
 
-.image {
+.imageDiv {
     position: relative;
-    height: 50vw;
+    height: 70vw;
+}
+
+.image {
+    border-radius: 50%;
 }
 
 .details {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     max-width: 1250px;
 }
 
@@ -20,15 +25,27 @@
     font-size: 90%;
 }
 
+@media (min-width: 400px) {
+    .details {
+        justify-content: center;
+        align-items: center;
+    }
+    .imageDiv {
+        height: 17.5rem;
+        width: 21rem;
+    }
+}
+
 @media (min-width: 801px) {
-    .image {
-        max-width: 36rem;
+    .imageDiv {
+        max-width: 20rem;
         max-height: 20rem;
         order: 2;
     }
     .details {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 5em;
         align-items: center;
         padding-left: 3rem;
     }

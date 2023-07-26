@@ -1,5 +1,6 @@
 import AboutMe from '@/components/about/AboutMe'
 import ContactMe from '@/components/contact/Contact'
+import Footer from '@/components/footer/Footer'
 import Hero from '@/components/hero/Hero'
 import MyWorks from '@/components/works/MyWorks'
 import Head from 'next/head'
@@ -26,6 +27,7 @@ export default function Home() {
         <MyWorks />
         <AboutMe />
         <ContactMe />
+        <Footer />
       </main>
     </>
 }
