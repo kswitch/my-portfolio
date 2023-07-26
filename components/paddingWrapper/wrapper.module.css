@@ -10,3 +10,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.356);
     background-color: black;
 }
+
+.red-bottom-border {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.356);
+}
