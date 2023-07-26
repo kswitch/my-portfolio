@@ -1,6 +1,12 @@
-.padding {
-    padding-top: 5rem;
+.padding-top-lg {
+    padding: 5rem 0 0;
 }
-.bgColor {
+
+.padding-sm {
+    padding: 2rem 0;
+}
+
+.footerStyles {
+    border-top: 1px solid rgba(255, 255, 255, 0.356);
     background-color: black;
 }

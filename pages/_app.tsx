@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Navbar />
-      <Wrapper>
+      <Wrapper styles={['padding-top-lg']}>
         <Component {...pageProps} />
       </Wrapper>
     </Fragment> 

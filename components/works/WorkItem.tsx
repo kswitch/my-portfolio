@@ -7,6 +7,7 @@ import GitHubIcon from '../icons/GitHubIcon'
 interface WorkItemProps {
     imgSrc: string,
     imgAlt: string,
+    iconTitle?:string,
     title: string,
     excerpt: string,
     languages: string[],
@@ -16,6 +17,7 @@ interface WorkItemProps {
 }
 
 export default function WorkItem({
+    iconTitle,
     title, 
     excerpt, 
     languages, 

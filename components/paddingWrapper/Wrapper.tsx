@@ -1,10 +1,9 @@
 import { ReactNode } from 'react'
+import classes from './wrapper.module.css'
 
-import styles from './wrapper.module.css'
-
-export default function Wrapper({children}: {children: ReactNode}): JSX.Element {
+export default function Wrapper({styles, children}: {styles:string[], children: ReactNode}): JSX.Element {
     return (
-        <div className={`${styles.padding}`}>
+        <div className={`${styles.map(style => (`${classes[style]}`)).join(" ")}`}>
             {children}
         </div>
     )
