@@ -25,7 +25,7 @@ export default function Navbar(): JSX.Element {
 
   return (
     <Fragment>
-      <nav className={`${styles.navbar}`} id={`${isMenuOpened && (windowWidth <= 399) ? 'navbarOpened' : ''}`}>
+      <nav className={`${styles.navbar} ${isMenuOpened && (windowWidth <= 399) ? `${styles['navbarOpened']}` : ''}`}>
         <NavbarItem value="Home" openOrCloseMenu={openOrCloseMenu} />
         <NavbarItem value="Works" openOrCloseMenu={openOrCloseMenu} />
         <NavbarItem value="About" openOrCloseMenu={openOrCloseMenu} />

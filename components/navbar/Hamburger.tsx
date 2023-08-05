@@ -11,7 +11,7 @@ export default function Hamburger({menuState, openOrCloseMenu}: HamburgerProps):
     }
 
     return (
-        <div className={`${styles.hamburger} ${menuState ? 'open' : ''}`} onClick={openCloseMenu}>
+        <div className={`${styles.hamburger} ${menuState ? `${styles.open}` : ''}`} onClick={openCloseMenu}>
             <span className={`${styles.bar} bar`}></span>
             <span className={`${styles.bar} bar`}></span>
             <span className={`${styles.bar} bar`}></span>

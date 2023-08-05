@@ -23,4 +23,16 @@
         top: 0;
         display: block;
     }
+
+    .open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .open .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    .open .bar:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
+    }
 }
