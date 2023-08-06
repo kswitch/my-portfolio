@@ -33,36 +33,57 @@ export default async function Contact(req: NextApiRequest,res: NextApiResponse<D
     }
 
     const newMessage = {name, email, message}
-
+    
     try {
       const client = await connectToMongoDB(process.env.MONGODB_USER, process.env.MONGODB_PASS, process.env.MONGODB_HOST)
-      console.log('Successfully Connected to Mongo Database!')
+
+      //Add extra properties to the message after input checks and establishing a successful connection to the the database
+      //------------------------------------------------------------------------------
+      const date = Date.now()
+      
+      const messageToSend = {
+        message_id: `${date.toString()}_message`,
+        date: date,
+        subject: `${message.length > 25 ? `${message.slice(0, 25)}...` : message}`,
+        from: {
+          name,
+          email
+        },
+        messageBody: message,
+        isRead: false,
+        isStarred: false,
+        isSpam: false,
+        isTrash: false,
+        isDraft: false,
+      }
+      //------------------------------------------------------------------------------
 
       try {
-        const messageStatus = await addMessageToMongoDB(
+        await addMessageToMongoDB(
           client, 
           process.env.MONGODB_DATABASE, 
           process.env.MONGODB_COLLECTION, 
-          newMessage
+          messageToSend
         )
-        console.log("Message sent to database successfully!")
-        console.log('Status', messageStatus)
 
+        client.close()
+          
         res.status(201).json({ 
           message: 'Message Sent Successfully!',
           value: newMessage
         })
-        client.close()
         return
       } 
       catch (error) {
-        res.status(502).json({message: "Something went wrong. Please contact Site Administrator"})
+        res.status(502).json({message: "Message not sent. Please contact Site Administrator"})
         console.log(error)
       }
+      return
     } 
     catch (error) {
-      res.status(502).json({ message: "Message Not Sent. Please Contact Site Administrator"})
+      res.status(502).json({ message: "Something went wrong. Please Contact Site Administrator"})
       console.log(error)
     }
+    return
   }
 }
