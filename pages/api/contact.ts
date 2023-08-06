@@ -77,13 +77,13 @@ export default async function Contact(req: NextApiRequest,res: NextApiResponse<D
       catch (error) {
         res.status(502).json({message: "Message not sent. Please contact Site Administrator"})
         console.log(error)
+        return
       }
-      return
     } 
     catch (error) {
       res.status(502).json({ message: "Something went wrong. Please Contact Site Administrator"})
       console.log(error)
+      return
     }
-    return
   }
 }
