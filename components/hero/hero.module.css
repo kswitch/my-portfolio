@@ -15,6 +15,10 @@
     font-size: 6vw;
 }
 
+.excerpt {
+    color: #808080;
+}
+
 @media (min-width: 400px) {
     .hero {
         justify-content: flex-start;
@@ -30,6 +34,11 @@
     .heroContent {
         font-size: 200%;
         padding: 4rem 3rem;
+    }
+    .excerpt {
+        max-width: 68vw;
+        word-wrap: break-word;
+        font-size: 80%;
     }
 }
 
