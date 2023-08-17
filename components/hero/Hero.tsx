@@ -11,7 +11,7 @@ export default function Hero({name, excerpt}: HeroProps): JSX.Element {
         <div className={styles.hero} id='home'>
             <div className={styles.heroContent}>
                 <h2>{name}</h2>
-                <h5>{excerpt}</h5>
+                <h5 className={styles.excerpt}>{excerpt}</h5>
                 <Button 
                     value="Get in Touch"
                     style="hero"

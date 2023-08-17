@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         <Hero 
           name="Kingsley Osuagwu-Chidiadi" 
-          excerpt="A Frontend Developer based in Lagos, Nigeria" 
+          excerpt="A Frontend Developer who loves to code in TypeScript and NextJS. He is based in Lagos, Nigeria." 
         />
         <MyWorks />
         <AboutMe />
